@@ -64,7 +64,7 @@ public class modelOfPc {
                         try {
                             synchronizedLock.wait();
                         } catch (Exception e) {
-			                return;
+			    return;
                         }
                     }
                     size--;
