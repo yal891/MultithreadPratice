@@ -40,6 +40,9 @@ public class modelOfPc {
                     }
                     size++;
                     System.out.println(Thread.currentThread().getName() + "----the total after Producer is: " + size);
+                    
+                    //Notify when the capacity is full
+                    if (size == Capacity) System.out.println("The Capacity is full. Consuming! ");
                     synchronizedLock.notifyAll();
                 }
             }
@@ -66,6 +69,8 @@ public class modelOfPc {
                     }
                     size--;
                     System.out.println(Thread.currentThread().getName() + "----the total after Consumer is: " + size);
+                    //Notify when the capacity is empty.
+                    if (size == 0) System.out.println("The Capacity is empty. Producing! ");
                     synchronizedLock.notifyAll();
                 }
             }
