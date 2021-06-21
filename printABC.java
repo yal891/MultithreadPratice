@@ -4,7 +4,7 @@ import java.util.concurrent.Executors;
 public class printABC2 {
       
     // Utilization of ExecutorService with a single thread executor to print A or B or C.
-    // Test: CPU Time: 0.22 sec(s), Memory: 38664 kilobyte(s)
+    // Test: Time: 0.22 sec(s), Memory: 38664 kilobyte(s)
     // Code is much shorter but a little slower compared with "wait and notify all".
       
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class printABC2 {
 // public class pringABC1 {
 //       // Utilize wait and notifyall;
 //       // three booleans of thread
-//       //Test: CPU Time: 0.12 sec(s), Memory: 35096 kilobyte(s)
+//       //Test: Time: 0.12 sec(s), Memory: 35096 kilobyte(s)
 //     private static boolean threadOfA = true;
 //     private static boolean threadOfB = false;
 //     private static boolean threadOfC = false;
