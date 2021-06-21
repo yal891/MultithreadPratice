@@ -1,7 +1,8 @@
 public class modelOfPc {
 
 // Producer and custumer achieved by wait and notifyall
-
+// Time: 0.25 sec(s), Memory: 38180 kilobyte(s)
+	
     private static Integer size = 0;
     private static final Integer Capacity = 10;
     private static String synchronizedLock = "lock";
